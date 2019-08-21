@@ -1,0 +1,37 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Programacion en ambientes web
+  </h1>
+  <h2></h2>
+  
+ 
+  
+</div>
+
+<div>
+<h2>Soy una calculadora : </h2>
+<div>
+<input [(ngModel)]='numero1' type ="number" name="numero1" class="form-control"> 
+<input [(ngModel)]='numero2'type ="number" name="numero2" class="form-control"> 
+</div>
+<div>
+  <button class="btn btn-success" (click)="sumar()" >+</button>
+  <button class="btn btn-success" (click)="restar()" >-</button>
+
+      <button class="btn btn-success" (click)="dividir()" >/</button>
+
+  
+  <button class="btn btn-success" (click)="multiplicar()" >x</button>
+</div>
+<div class="card-footer">
+El resultado es {{resultado}}
+<h2>{{restM}}</h2>
+</div>
+
+<div>
+  <button (click)="borrar()" >Borrar</button>
+</div>
+
+
+<router-outlet></router-outlet>
